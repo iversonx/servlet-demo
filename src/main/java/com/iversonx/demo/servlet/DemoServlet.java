@@ -25,16 +25,19 @@ public class DemoServlet extends HttpServlet {
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        System.out.println("service()");
         super.service(req, res);
     }
 
     @Override
     public void destroy() {
+        System.out.println("destroy()");
         super.destroy();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("doGet()");
         ServletOutputStream outputStream = resp.getOutputStream();
         outputStream.println("Hello Servlet");
         outputStream.flush();
