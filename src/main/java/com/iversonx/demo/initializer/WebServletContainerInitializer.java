@@ -17,7 +17,7 @@ import java.util.Set;
  */
 public class WebServletContainerInitializer implements ServletContainerInitializer {
     public void onStartup(Set<Class<?>> c, ServletContext ctx) throws ServletException {
-        System.out.println("Startup....");
-        // ctx.addServlet("DemoServlet", DemoServlet.class).addMapping("/");
+        System.out.println("Initializer....");
+        ctx.addServlet("DemoServlet", DemoServlet.class).addMapping("/");
     }
 }
