@@ -22,4 +22,4 @@ Servlet容器还包含并管理生命周期中的Servlet。Servlet容器必须�
 
 ## 核心功能
 
-[Servlet接口](./servlet.md)
+[Servlet接口](./Servlet.md)
